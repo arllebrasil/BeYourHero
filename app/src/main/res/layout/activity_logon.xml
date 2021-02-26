@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/grey5"
+        android:layout_margin="16dp"
+        android:paddingVertical="36dp"
+        android:paddingHorizontal="18dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/usuarioEdt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/input"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="12dp"
+            android:elevation="12dp"
+            android:ems="10"
+            android:hint="Usuário"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="12dp"
+            android:text=""
+            android:textColorHint="@color/grey2" />
+
+        <EditText
+            android:id="@+id/senhaEdt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/input"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="12dp"
+            android:elevation="12dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="12dp"
+            android:text=""
+            android:textColorHint="@color/grey2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/button"
+            android:elevation="12dp"
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textFontWeight="700"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/subscribeLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:elevation="12dp"
+            android:text="Criar uma conta"
+            android:textColor="@color/grey2"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
